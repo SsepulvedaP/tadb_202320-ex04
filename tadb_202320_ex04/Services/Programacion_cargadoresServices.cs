@@ -16,7 +16,7 @@ namespace tadb_202320_ex04.Services
         }
 
         //Validación para traer todas las programaciones de cargadores
-        public async Task<IEnumerable<Programacion_cargadores>> GetAllUtilizacionesAsync()
+        public async Task<IEnumerable<Programacion_cargadores>> GetAllProgramacion_cargadoresesAsync()
         {
             return await _Programacion_cargadoresRepository.GetAllAsync();
         }

@@ -5,7 +5,7 @@
         public string DatabaseName { get; set; } = null!;
         public string ColeccionBuses { get; set; } = null!;
         public string ColeccionCargadores { get; set; } = null!;
-        public string ColeccionHoras { get; set; } = null!;
+        public string ColeccionHorarios_operacion { get; set; } = null!;
         public string ColeccionProgramacion_autobuses { get; set; } = null!;
         public string ColeccionProgramacion_cargadores { get; set; } = null!;
 
@@ -16,7 +16,7 @@
             DatabaseName = configuracion.GetSection("DatabaseName").Value!;
             ColeccionBuses = configuracion.GetSection("ColeccionBuses").Value!;
             ColeccionCargadores = configuracion.GetSection("ColeccionCargadores").Value!;
-            ColeccionHoras = configuracion.GetSection("ColeccionHoras").Value!;
+            ColeccionHorarios_operacion = configuracion.GetSection("ColeccionHorarios_operacion").Value!;
             ColeccionProgramacion_autobuses = configuracion.GetSection("ColeccionProgramacion_autobuses").Value!;
             ColeccionProgramacion_cargadores = configuracion.GetSection("ColeccionProgramacion_cargadores").Value!;
         }

@@ -6,24 +6,24 @@ namespace tadb_202320_ex04.DbContexts
     public class MongoDbContext
     {
         private readonly string cadenaConexion;
-        private readonly BusesDatabaseSettings _sistema_busesDatabaseSettings;
+        private readonly BusesDatabaseSettings Autobuses_BDDatabaseSettings;
         public MongoDbContext(IConfiguration unaConfiguracion)
         {
             cadenaConexion = unaConfiguracion.GetConnectionString("Mongo")!;
-            _sistema_busesDatabaseSettings = new BusesDatabaseSettings(unaConfiguracion);
+            Autobuses_BDDatabaseSettings = new BusesDatabaseSettings(unaConfiguracion);
         }
 
         public IMongoDatabase CreateConnection()
         {
             var clienteDB = new MongoClient(cadenaConexion);
-            var miDB = clienteDB.GetDatabase(_sistema_busesDatabaseSettings.DatabaseName);
+            var miDB = clienteDB.GetDatabase(Autobuses_BDDatabaseSettings.DatabaseName);
 
             return miDB;
         }
 
         public BusesDatabaseSettings configuracionColecciones
         {
-            get { return _sistema_busesDatabaseSettings; }
+            get { return Autobuses_BDDatabaseSettings; }
         }
     }
 }

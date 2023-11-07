@@ -18,7 +18,7 @@ namespace tadb_202320_ex04.Repositories
         public async Task<IEnumerable<Horarios_operacion>> GetAllAsync()
         {
             var conexion = contextoDB.CreateConnection();
-            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHoras);
+            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHorarios_operacion);
 
             var lasHoras = await coleccionHoras
                 .Find(_ => true)
@@ -33,7 +33,7 @@ namespace tadb_202320_ex04.Repositories
 
             Horarios_operacion hora = new();
             var conexion = contextoDB.CreateConnection();
-            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHoras);
+            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHorarios_operacion);
 
             var resultado = await coleccionHoras.Find(hora => hora.hora == id_hora).FirstOrDefaultAsync();
 
@@ -50,7 +50,7 @@ namespace tadb_202320_ex04.Repositories
             bool resultadoAccion = false;
 
             var conexion = contextoDB.CreateConnection();
-            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHoras);
+            var coleccionHoras = conexion.GetCollection<Horarios_operacion>(contextoDB.configuracionColecciones.ColeccionHorarios_operacion);
 
             await coleccionHoras.InsertOneAsync(hora);
 
