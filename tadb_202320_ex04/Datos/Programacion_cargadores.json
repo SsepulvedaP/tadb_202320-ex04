@@ -1,0 +1,58 @@
+[
+  {
+    "hora": 4,
+    "id_autobus": "43194rc087eebc9b9bc470w1",
+    "id_cargador": "15494daf87eqbc9u9bc470cc"
+  },
+  {
+    "hora": 11,
+    "id_autobus": "43194rc087eebc9b9bc470w1",
+    "id_cargador": "15494daf87eqbc9u9bc470cc"
+  },
+  {
+    "hora": 12,
+    "id_autobus": "43194rc087eebc9b9bc470w1",
+    "id_cargador": "15494daf87eqbc9u9bc470cc"
+  },
+  {
+    "hora": 1,
+    "id_autobus": "25963ab047ecbg9h1oq820pd",
+    "id_cargador": "13678dcf87ebbc9b9bc470wq"
+  },
+  {
+    "hora": 2,
+    "id_autobus": "25963ab047ecbg9h1oq820pd",
+    "id_cargador": "13678dcf87ebbc9b9bc470wq"
+  },
+  {
+    "hora": 12,
+    "id_autobus": "25963ab047ecbg9h1oq820pd",
+    "id_cargador": "13678dcf87ebbc9b9bc470wq"
+  },
+  {
+    "hora": 13,
+    "id_autobus": "25963ab047ecbg9h1oq820pd",
+    "id_cargador": "13678dcf87ebbc9b9bc470wq"
+  },
+  {
+    "hora": 3,
+    "id_autobus": "65421dc087ewwr9b9bc470z1",
+    "id_cargador": "65494dcf87ebbc9b9bc470ce"
+  },
+  {
+    "hora": 4,
+    "id_autobus": "65421dc087ewwr9b9bc470z1",
+    "id_cargador": "65494dcf87ebbc9b9bc470ce"
+  },
+  {
+    "hora": 14,
+    "id_autobus": "65421dc087ewwr9b9bc470z1",
+    "id_cargador": "65494dcf87ebbc9b9bc470ce"
+  },
+  {
+    "hora": 15,
+    "id_autobus": "65421dc087ewwr9b9bc470z1",
+    "id_cargador": "65494dcf87ebbc9b9bc470ce"
+  }
+
+]
